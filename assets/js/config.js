@@ -9,7 +9,7 @@ window.SITE_CONFIG = {
   // Paste your Formspree form URL here (e.g. "https://formspree.io/f/abcdwxyz").
   // Until this is set, the forms open the visitor's email app instead,
   // and the site tells them so (it never claims a message was sent).
-  formEndpoint: "",
+  formEndpoint: "https://formspree.io/f/xpppoabq",
   contactEmail: "bestep@estepssolutionsllc.com",
 
   // ---- Service area ----------------------------------------------------
