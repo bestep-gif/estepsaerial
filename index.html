@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estep's Aerial | Drone Photography, Video &amp; Inspections</title>
+<link rel="icon" href="images/favicon.png">
+<meta name="description" content="Estep's Aerial, a division of Estep's Solutions LLC. Friendly, local drone services: aerial photos and video for homes, construction sites, roofs, events and businesses. Free quotes, no obligation.">
+<meta property="og:title" content="Estep's Aerial | Friendly Aerial Drone Services">
+<meta property="og:description" content="Aerial photos and video for homes, projects, roofs and events. Free quotes, no obligation.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aerial.estepssolutionsllc.com/">
+<meta property="og:image" content="https://aerial.estepssolutionsllc.com/images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff; --soft:#f3f8fc; --sky:#e3f1fc; --card:#ffffff; --line:#e1eaf2;
+    --text:#0f2744; --muted:#526379; --brand:#1e90e6; --brand-d:#0f2744; --warm:#ff9f43; --warm-soft:#fff4e8;
+    --radius:20px; --max:1120px; --shadow:0 10px 30px -12px #16283a26;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Nunito,Inter,sans-serif;line-height:1.15;font-weight:800}
+  a{color:inherit}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+  section{padding:92px 0}
+  .eyebrow{display:inline-block;font-size:.82rem;font-weight:600;color:var(--brand);background:var(--sky);padding:6px 14px;border-radius:999px;margin-bottom:16px}
+  .lead{color:var(--muted);font-size:1.12rem;max-width:640px}
+  .center{text-align:center}.center .lead{margin:0 auto}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:15px 28px;border-radius:999px;font-weight:600;text-decoration:none;transition:.2s;border:2px solid transparent;cursor:pointer;font-size:1rem;font-family:inherit}
+  .btn-primary{background:var(--brand);color:#fff;box-shadow:0 8px 20px -8px #1f7ae0aa}
+  .btn-primary:hover{background:var(--brand-d);transform:translateY(-2px)}
+  .btn-ghost{border-color:var(--line);color:var(--text);background:#fff}
+  .btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+
+  header{position:fixed;top:0;left:0;right:0;z-index:50;transition:.25s;background:#ffffffcc;backdrop-filter:blur(10px)}
+  header.scrolled{box-shadow:0 1px 0 var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:Nunito;font-weight:800;font-size:1.15rem}
+  .logo .mark{height:40px;width:auto}.logo span{display:flex;flex-direction:column;line-height:1.1}.logo small{font-family:Inter;font-weight:500;font-size:.68rem;color:var(--muted);letter-spacing:.02em}
+  .nav ul{display:flex;gap:28px;list-style:none;align-items:center}
+  .nav ul a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.95rem}
+  .nav ul a:hover{color:var(--brand)}
+  .nav .btn{padding:10px 20px;font-size:.92rem;color:#fff}
+  .menu-btn{display:none;background:none;border:0;color:var(--text);font-size:1.6rem;cursor:pointer}
+
+  /* Hero */
+  .hero{padding:150px 0 90px;background:linear-gradient(180deg,#dff0fc 0%,#f3f8fc 55%,#fff 100%);position:relative;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  .hero h1{font-size:clamp(2.4rem,5.2vw,3.9rem);margin-bottom:20px}
+  .hero h1 span{color:var(--brand)}
+  .hero .lead{margin-bottom:32px}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .reassure{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;color:var(--muted);font-size:.93rem}
+  .reassure span{display:flex;align-items:center;gap:7px}
+  .reassure i{width:20px;height:20px;border-radius:50%;background:#2fbf71;color:#fff;font-style:normal;font-size:.7rem;display:grid;place-items:center}
+  .hero-photo{position:relative;aspect-ratio:1/1.02;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);background:#fff;display:grid;place-items:start center;max-width:520px;justify-self:center;width:100%}
+  .hero-photo .hero-logo{width:92%;margin-top:-2%;animation:hover 5s ease-in-out infinite}
+  .hero-photo .cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  @keyframes hover{50%{transform:translateY(-8px)}}
+  .float-card{position:absolute;bottom:18px;left:18px;right:18px;background:#fffffff0;border-radius:16px;padding:14px 18px;display:flex;gap:12px;align-items:center;font-size:.92rem;box-shadow:var(--shadow)}
+  .float-card b{display:block;font-size:.95rem}
+  .float-card span{color:var(--muted);font-size:.85rem}
+  .float-card .dot{width:40px;height:40px;border-radius:12px;background:var(--warm-soft);display:grid;place-items:center;font-size:1.2rem;flex:none}
+  @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:120px}}
+
+  /* Helper */
+  .helper{background:#fff;padding-top:20px}
+  .helper-box{background:var(--soft);border:1px solid var(--line);border-radius:28px;padding:44px}
+  .helper-box h2{font-size:clamp(1.7rem,3.2vw,2.2rem);margin-bottom:8px}
+  .choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:26px}
+  .choice{background:#fff;border:2px solid var(--line);border-radius:16px;padding:18px;cursor:pointer;text-align:left;font-family:inherit;font-size:.98rem;color:var(--text);transition:.2s;display:flex;gap:12px;align-items:center}
+  .choice:hover,.choice.on{border-color:var(--brand);transform:translateY(-2px)}
+  .choice .em{font-size:1.5rem}
+  .answer{display:none;margin-top:22px;background:#fff;border-radius:16px;padding:22px 24px;border-left:5px solid var(--brand);box-shadow:var(--shadow)}
+  .answer.show{display:block;animation:fade .35s}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}}
+  .answer h3{font-size:1.2rem;margin-bottom:6px}
+  .answer p{color:var(--muted);margin-bottom:14px}
+
+  /* Services */
+  .section-head{margin-bottom:48px}
+  .section-head h2{font-size:clamp(2rem,4vw,2.7rem);margin-bottom:12px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px;transition:.25s}
+  .card:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
+  .card .icon{width:54px;height:54px;border-radius:16px;background:var(--sky);display:grid;place-items:center;margin-bottom:18px;font-size:1.6rem}
+  .card h3{font-size:1.28rem;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:.97rem;margin-bottom:14px}
+  .card .good{font-size:.88rem;color:var(--text);background:var(--soft);border-radius:12px;padding:10px 14px}
+  .card .good b{color:var(--brand)}
+
+  /* Portfolio */
+  .work{background:var(--soft)}
+  .filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;justify-content:center}
+  .filters button{background:#fff;border:1px solid var(--line);color:var(--muted);padding:9px 18px;border-radius:999px;cursor:pointer;font-family:inherit;font-size:.92rem}
+  .filters button.active,.filters button:hover{border-color:var(--brand);color:var(--brand)}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px}
+  .item{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:16/10;background:linear-gradient(160deg,#cfe6f7,#e9f3fa);cursor:pointer;box-shadow:0 4px 14px -8px #16283a33}
+  .item img,.item iframe{width:100%;height:100%;object-fit:cover;border:0;transition:transform .5s}
+  .item:hover img{transform:scale(1.05)}
+  .item .ph{position:absolute;inset:0;display:grid;place-items:center;color:#5a6d8099;font-size:.85rem;text-align:center;padding:20px}
+  .item .cap{position:absolute;left:12px;bottom:12px;background:#fffffff2;border-radius:12px;padding:8px 14px;font-size:.9rem;font-weight:500}
+  .item .cap small{color:var(--brand);font-weight:600;margin-right:6px}
+  .item.hide{display:none}
+  .lightbox{position:fixed;inset:0;background:#0b1622e6;display:none;align-items:center;justify-content:center;z-index:100;padding:30px}
+  .lightbox.open{display:flex}
+  .lightbox img{max-height:88vh;border-radius:14px}
+  .lightbox button{position:absolute;top:20px;right:26px;background:none;border:0;color:#fff;font-size:2rem;cursor:pointer}
+
+  /* Steps */
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;counter-reset:s}
+  .step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;counter-increment:s;position:relative}
+  .step::before{content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--brand);color:#fff;font-family:Nunito;font-weight:800;display:grid;place-items:center;margin-bottom:16px}
+  .step h3{font-size:1.15rem;margin-bottom:6px}
+  .step p{color:var(--muted);font-size:.95rem}
+
+  /* About */
+  .about{background:var(--soft)}
+  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+  .about-img{aspect-ratio:4/4.6;border-radius:28px;background:linear-gradient(160deg,#cfe6f7,#e9f3fa);display:grid;place-items:center;color:#5a6d8099;font-size:.85rem;overflow:hidden;box-shadow:var(--shadow)}
+  .about-img img{width:100%;height:100%;object-fit:cover}
+  .about h2{font-size:clamp(2rem,4vw,2.6rem);margin-bottom:16px}
+  .about p{color:var(--muted);margin-bottom:16px}
+  .promise{display:grid;gap:10px;margin-top:22px}
+  .promise div{display:flex;gap:12px;align-items:flex-start;background:#fff;border-radius:14px;padding:14px 16px;border:1px solid var(--line)}
+  .promise b{display:block}
+  .promise span{color:var(--muted);font-size:.9rem}
+  @media(max-width:860px){.about-grid{grid-template-columns:1fr}}
+
+  /* FAQ */
+  .faq-list{max-width:780px;margin:0 auto;display:grid;gap:12px}
+  details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:4px 22px;transition:.2s}
+  details[open]{box-shadow:var(--shadow);border-color:#cfe0ef}
+  summary{cursor:pointer;list-style:none;padding:16px 0;font-weight:600;display:flex;justify-content:space-between;gap:14px;font-size:1.02rem}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--brand);font-size:1.4rem;line-height:1}
+  details[open] summary::after{content:"−"}
+  details p{color:var(--muted);padding-bottom:18px}
+
+  /* Contact */
+  .contact{background:linear-gradient(180deg,#fff,#e6f2fb)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:50px;align-items:start}
+  .contact-info h2{font-size:clamp(2rem,4vw,2.6rem);margin-bottom:14px}
+  .contact-info p{color:var(--muted);margin-bottom:24px}
+  .contact-info a{display:flex;gap:12px;align-items:center;text-decoration:none;margin-bottom:12px;font-weight:500}
+  .contact-info a:hover{color:var(--brand)}
+  .note{background:var(--warm-soft);border-radius:14px;padding:14px 18px;font-size:.92rem;margin-top:20px}
+  form{background:#fff;border-radius:24px;padding:32px;display:grid;gap:16px;box-shadow:var(--shadow)}
+  form h3{font-size:1.3rem}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  label{font-size:.88rem;color:var(--text);font-weight:500;display:grid;gap:6px}
+  label em{color:var(--muted);font-style:normal;font-weight:400}
+  input,select,textarea{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--text);font:inherit;font-size:.96rem}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--brand);background:#fff}
+  textarea{min-height:110px;resize:vertical}
+  .small{font-size:.84rem;color:var(--muted);text-align:center}
+  @media(max-width:860px){.contact-grid,.row{grid-template-columns:1fr}}
+
+  footer{padding:34px 0;color:var(--muted);font-size:.88rem;background:#e6f2fb}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+  @media(max-width:860px){
+    .nav ul{position:fixed;top:72px;left:0;right:0;flex-direction:column;background:#fff;padding:24px;gap:18px;box-shadow:var(--shadow);display:none}
+    .nav ul.open{display:flex}
+    .menu-btn{display:block}
+    section{padding:70px 0}
+    .helper-box{padding:28px}
+  }
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s,transform .7s}
+  .reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo" aria-label="Estep's Aerial home">
+      <img src="images/logo-mark.png" alt="" class="mark">
+      <span>Estep's Aerial<small>A division of Estep's Solutions LLC</small></span>
+    </a>
+    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">&#9776;</button>
+    <ul id="menu">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact" class="btn btn-primary">Free Quote</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">&#128075; Friendly, local drone services</span>
+      <h1>Beautiful aerial photos &amp; video, <span>made easy.</span></h1>
+      <p class="lead">Never hired a drone pilot before? No problem. Tell me what you'd like to show off and I'll handle the rest: planning, flying, editing and delivery.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+        <a href="#start" class="btn btn-ghost">Help me choose</a>
+      </div>
+      <div class="reassure">
+        <!-- EDIT: only keep what's true for you -->
+        <span><i>&#10003;</i> Free quotes, no obligation</span>
+        <span><i>&#10003;</i> FAA-certified pilot</span>
+        <span><i>&#10003;</i> Fast turnaround</span>
+      </div>
+    </div>
+    <div class="hero-photo reveal">
+      <!-- Once you have a great aerial shot, you can swap the logo for it:
+           <img src="images/hero.jpg" alt="Aerial view of a home" class="cover"> -->
+      <img src="images/logo.png" alt="Estep's Aerial, a division of Estep's Solutions LLC" class="hero-logo">
+      <div class="float-card"><div class="dot">&#128247;</div><div><b>Your photos, ready to share</b><span>Edited and delivered by download link</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="helper" id="start">
+  <div class="wrap">
+    <div class="helper-box reveal">
+      <span class="eyebrow">Not sure where to start?</span>
+      <h2>What are you hoping to do?</h2>
+      <p class="lead">Pick the one that sounds most like you. I'll point you in the right direction.</p>
+      <div class="choices">
+        <button class="choice" data-k="sell"><span class="em">&#127968;</span>Sell or rent a property</button>
+        <button class="choice" data-k="build"><span class="em">&#127959;&#65039;</span>Track a construction project</button>
+        <button class="choice" data-k="roof"><span class="em">&#128269;</span>Check a roof or damage</button>
+        <button class="choice" data-k="promo"><span class="em">&#127881;</span>Promote a business or event</button>
+        <button class="choice" data-k="fun"><span class="em">&#10024;</span>Something personal or creative</button>
+      </div>
+      <div class="answer" id="answer"><h3></h3><p></p><a href="#contact" class="btn btn-primary" id="answer-btn">Get a quote for this</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Services</span>
+      <h2>How I can help</h2>
+      <p class="lead">Every job includes the planning, the flight and edited results. You don't need to know anything about drones.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal"><div class="icon">&#127968;</div><h3>Homes &amp; Property</h3><p>Show buyers the whole picture: the house, the yard, the land and what's nearby.</p><div class="good"><b>Great for:</b> homeowners, realtors, land sellers</div></div>
+      <div class="card reveal"><div class="icon">&#127959;&#65039;</div><h3>Construction Updates</h3><p>Regular flights from the same spots so you can see the project progress over time.</p><div class="good"><b>Great for:</b> builders, contractors, project owners</div></div>
+      <div class="card reveal"><div class="icon">&#128269;</div><h3>Roof &amp; Property Checks</h3><p>Clear, close-up photos of roofs and hard-to-reach places. No ladders, no climbing.</p><div class="good"><b>Great for:</b> storm damage, insurance claims, upkeep</div></div>
+      <div class="card reveal"><div class="icon">&#127909;</div><h3>Fly-Through Videos</h3><p>Smooth, eye-catching videos that glide through a home, shop or venue in one shot.</p><div class="good"><b>Great for:</b> businesses, venues, social media</div></div>
+      <div class="card reveal"><div class="icon">&#127881;</div><h3>Events &amp; Promotions</h3><p>Aerial highlights of your event or business that make people stop scrolling.</p><div class="good"><b>Great for:</b> events, local shops, organizations</div></div>
+      <div class="card reveal"><div class="icon">&#128506;&#65039;</div><h3>Flight Data Videos</h3><p>Video with height, speed and a map shown on screen, made with my own Flight Studio app.</p><div class="good"><b>Great for:</b> reports, records, fellow pilots</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Our Work</span>
+      <h2>A few recent flights</h2>
+      <p class="lead">Tap any photo to see it bigger.</p>
+    </div>
+    <div class="filters">
+      <button class="active" data-f="all">All</button>
+      <button data-f="property">Homes</button>
+      <button data-f="construction">Construction</button>
+      <button data-f="video">Video</button>
+    </div>
+    <!--
+      HOW TO ADD YOUR WORK:
+      - Photos: put them in /images and swap <div class="ph">...</div> for
+        <img src="images/your-photo.jpg" alt="Short description">
+      - YouTube: swap the placeholder for
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+      - data-cat decides which filter shows it.
+    -->
+    <div class="gallery">
+      <div class="item reveal" data-cat="property"><div class="ph">Add photo: images/property-1.jpg</div><div class="cap"><small>Home</small>Family home listing</div></div>
+      <div class="item reveal" data-cat="construction"><div class="ph">Add photo: images/construction-1.jpg</div><div class="cap"><small>Construction</small>Monthly site update</div></div>
+      <div class="item reveal" data-cat="video"><div class="ph">Add YouTube video</div><div class="cap"><small>Video</small>Fly-through tour</div></div>
+      <div class="item reveal" data-cat="property"><div class="ph">Add photo: images/property-2.jpg</div><div class="cap"><small>Land</small>Acreage overview</div></div>
+      <div class="item reveal" data-cat="video"><div class="ph">Add YouTube video</div><div class="cap"><small>Video</small>Highlight reel</div></div>
+      <div class="item reveal" data-cat="construction"><div class="ph">Add photo: images/roof-1.jpg</div><div class="cap"><small>Roof</small>Storm damage check</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">How It Works</span>
+      <h2>Four simple steps</h2>
+      <p class="lead">Here's exactly what to expect, from first message to finished photos.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Say hello</h3><p>Fill out the short form below. A rough idea is plenty; I'll ask any questions I need.</p></div>
+      <div class="step reveal"><h3>Get a clear quote</h3><p>I'll check the location and send a simple, up-front price. No surprises.</p></div>
+      <div class="step reveal"><h3>I fly, you relax</h3><p>I handle permissions, safety and weather. You don't even need to be there.</p></div>
+      <div class="step reveal"><h3>Enjoy your results</h3><p>You'll get edited photos and video by download link, ready to share anywhere.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-img reveal">
+      <!-- Replace with: <img src="images/brandon.jpg" alt="Brandon with his drone"> -->
+      Add a friendly photo: images/brandon.jpg
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Meet your pilot</span>
+      <h2>Hi, I'm Brandon! &#128075;</h2>
+      <p>I started Estep's Aerial, the drone division of Estep's Solutions LLC, because I love flying and love helping people see their places in a whole new way. I also build my own drone software, so I'm a little obsessed with getting the details right.</p>
+      <p>Whether this is your first time hiring a drone pilot or your fiftieth, I'll keep things simple, friendly and stress-free.</p>
+      <div class="promise">
+        <div>&#129309;<p><b>Straight answers</b><span>Plain language, honest advice, no jargon.</span></p></div>
+        <div>&#128737;&#65039;<p><b>Safety first</b><span>Every flight is planned and checked before takeoff.</span></p></div>
+        <div>&#128515;<p><b>Happy or I'll make it right</b><span>If something's not what you hoped for, just tell me.</span></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Questions</span>
+      <h2>New to drone services?</h2>
+      <p class="lead">Here are answers to the questions people usually ask first.</p>
+    </div>
+    <div class="faq-list reveal">
+      <details><summary>Do I need to know anything about drones?</summary><p>Not at all. Just tell me what you want to show and how you plan to use it. I'll recommend the right shots and take care of everything else.</p></details>
+      <details><summary>How much does it cost?</summary><p>It depends on the location and what you need, but quotes are always free and up-front. Send a quick message and you'll get a clear price before anything is booked.</p></details>
+      <details><summary>Is it legal and safe?</summary><p>Yes. I fly under FAA rules, check airspace and weather before every job, and get any permissions needed for the location. <!-- EDIT: confirm Part 107 / insurance wording --></p></details>
+      <details><summary>Do I need to be there during the flight?</summary><p>Nope, though you're welcome to watch! I just need access to the area and a heads-up about anything I should know.</p></details>
+      <details><summary>What if the weather is bad?</summary><p>Safety comes first, so if it's too windy or rainy I'll reschedule at no extra cost.</p></details>
+      <details><summary>How quickly will I get my photos?</summary><p>Usually within a few days. If you're on a deadline, let me know and I'll do my best to make it work.</p></details>
+      <details><summary>Can I use the photos and video however I want?</summary><p>Yes. They're yours to use on listings, websites, social media and for personal use.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <span class="eyebrow">Let's chat</span>
+      <h2>Tell me about your project</h2>
+      <p>No pressure and no commitment. Just send a message and I'll reply, usually within one business day.</p>
+      <a href="mailto:bestep@estepssolutionsllc.com">&#9993;&#65039;&nbsp; bestep@estepssolutionsllc.com</a>
+      <!-- EDIT: your service area -->
+      <a href="#contact">&#128205;&nbsp; Serving [Your City] &amp; nearby areas</a>
+      <div class="note">&#128161; <b>Tip:</b> Not sure what to write? Just share the address and what you'd like people to see. That's enough to get started!</div>
+    </div>
+    <form class="reveal" id="quote">
+      <h3>Request your free quote</h3>
+      <div class="row">
+        <label>Your name<input name="name" required></label>
+        <label>Email<input name="email" type="email" required></label>
+      </div>
+      <label>What can I help with?
+        <select name="service" id="service">
+          <option>Homes &amp; Property</option><option>Construction Updates</option>
+          <option>Roof &amp; Property Check</option><option>Fly-Through Video</option>
+          <option>Event or Promotion</option><option>Not sure yet, help me decide</option>
+        </select>
+      </label>
+      <div class="row">
+        <label>Location <em>(optional)</em><input name="location" placeholder="City or address"></label>
+        <label>When? <em>(optional)</em><input name="date" type="date"></label>
+      </div>
+      <label>Anything else? <em>(optional)</em><textarea name="details" placeholder="A sentence or two is perfect."></textarea></label>
+      <button class="btn btn-primary" type="submit" style="justify-content:center">Send My Request</button>
+      <p class="small">Free and no obligation. I'll never share your info.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr"></span> Estep's Aerial, a division of Estep's Solutions LLC</span>
+    <span>Friendly, safe drone services</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lb"><button aria-label="Close">&times;</button><img alt=""></div>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const header = document.querySelector('header');
+  addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 20));
+  document.querySelectorAll('#menu a').forEach(a => a.addEventListener('click', () => document.getElementById('menu').classList.remove('open')));
+
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold: .1});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // "Help me choose" helper
+  const tips = {
+    sell:  ['Homes & Property', 'Aerial photos and a short video help your listing stand out and show off the yard, land and neighborhood.', 'Homes & Property'],
+    build: ['Construction Updates', 'I can fly from the same spots on a regular schedule so you have a clear visual record of progress.', 'Construction Updates'],
+    roof:  ['Roof & Property Check', 'Close-up photos let you (or your insurer) see the damage clearly, without anyone climbing a ladder.', 'Roof & Property Check'],
+    promo: ['Events & Promotions', 'Eye-catching aerial clips and fly-through videos are perfect for your website and social media.', 'Event or Promotion'],
+    fun:   ["Let's talk about it!", "Family land, a special place, a creative idea: tell me what you're picturing and we'll figure it out together.", 'Not sure yet, help me decide']
+  };
+  let picked = null;
+  document.querySelectorAll('.choice').forEach(c => c.addEventListener('click', () => {
+    document.querySelectorAll('.choice').forEach(x => x.classList.remove('on'));
+    c.classList.add('on');
+    const t = tips[c.dataset.k]; picked = t[2];
+    const a = document.getElementById('answer');
+    a.querySelector('h3').textContent = 'Sounds like: ' + t[0];
+    a.querySelector('p').textContent = t[1];
+    a.classList.remove('show'); void a.offsetWidth; a.classList.add('show');
+  }));
+  document.getElementById('answer-btn').addEventListener('click', () => {
+    if (picked) document.getElementById('service').value = picked;
+  });
+
+  // Portfolio filters
+  document.querySelectorAll('.filters button').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('.filters button').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    const f = b.dataset.f;
+    document.querySelectorAll('.item').forEach(it => it.classList.toggle('hide', f !== 'all' && !it.dataset.cat.split(' ').includes(f)));
+  }));
+
+  // Lightbox
+  const lb = document.getElementById('lb');
+  document.querySelectorAll('.item').forEach(it => it.addEventListener('click', () => {
+    const img = it.querySelector('img'); if (!img) return;
+    lb.querySelector('img').src = img.src; lb.classList.add('open');
+  }));
+  lb.addEventListener('click', () => lb.classList.remove('open'));
+
+  // Quote form: opens the visitor's email app with details filled in.
+  document.getElementById('quote').addEventListener('submit', e => {
+    e.preventDefault();
+    const d = new FormData(e.target);
+    const body = [...d.entries()].map(([k, v]) => `${k[0].toUpperCase() + k.slice(1)}: ${v}`).join('\n');
+    location.href = 'mailto:bestep@estepssolutionsllc.com?subject=' +
+      encodeURIComponent('Estep\'s Aerial quote request: ' + d.get('service')) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
