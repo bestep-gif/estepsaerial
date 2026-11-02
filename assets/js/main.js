@@ -252,14 +252,26 @@
       $$(".filter", filterBar).forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
       draw();
     });
-    gallery.addEventListener("click", function (e) {
-      var card = e.target.closest(".proj"); if (!card) return;
-      var p = projects[+card.getAttribute("data-i")]; if (!p) return;
-      var items = (p.images || []).map(function (im) { return { type: "img", img: im, title: p.title, caption: im.caption || "" }; });
+    function projectItems(p) {
+      var meta = [p.location, p.sampleProject ? "Illustrated demo" : ""].filter(Boolean).join(" · ");
+      var items = (p.images || []).map(function (im) {
+        var cap = im.caption && im.caption.toLowerCase() !== p.title.toLowerCase() ? im.caption : "";
+        return { type: "img", img: im, title: p.title, caption: [cap, meta].filter(Boolean).join(" · ") };
+      });
       var vid = youtubeId(p.videoUrl);
       if (vid) items.unshift({ type: "video", id: vid, title: p.title, caption: "Video" });
-      if (!items.length && p.thumbnail) items.push({ type: "img", img: p.thumbnail, title: p.title });
-      if (items.length) LB.open(items, 0);
+      if (!items.length && p.thumbnail) items.push({ type: "img", img: p.thumbnail, title: p.title, caption: meta });
+      return items;
+    }
+    gallery.addEventListener("click", function (e) {
+      var card = e.target.closest(".proj"); if (!card) return;
+      var clicked = +card.getAttribute("data-i"), all = [], start = 0;
+      $$(".proj", gallery).forEach(function (c) {
+        var i = +c.getAttribute("data-i"), p = projects[i]; if (!p) return;
+        if (i === clicked) start = all.length;
+        all = all.concat(projectItems(p));
+      });
+      if (all.length) LB.open(all, start);
     });
     draw();
   }

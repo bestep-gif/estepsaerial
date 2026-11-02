@@ -22,8 +22,8 @@ window.SITE_CONFIG = {
   hero: {
     videoMp4: "",      // e.g. "assets/hero/hero.mp4"
     videoWebm: "",     // e.g. "assets/hero/hero.webm"  (optional)
-    poster: "",        // e.g. "assets/hero/hero-poster.webp"
-    posterAlt: ""      // e.g. "Aerial view of a home in Stafford, VA at sunset"
+    poster: "assets/projects/golden-hour-water/photo-01-1920.webp",
+    posterAlt: "Aerial view at sunset over a calm lake in Virginia"
   },
 
   // ---- About section ----------------------------------------------------

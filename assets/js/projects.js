@@ -10,7 +10,7 @@
    title         shown on the card
    slug          folder name under assets/projects/, e.g. "stafford-listing"
    category      one of: "real-estate", "construction", "documentation",
-                 "video", "commercial"
+                 "video", "commercial", "scenic"
    location      general area only, e.g. "Stafford, VA" (no client addresses)
    date          "YYYY-MM" or "YYYY-MM-DD"
    description   optional, one or two sentences
@@ -35,10 +35,123 @@ window.PORTFOLIO_CATEGORIES = [
   { id: "construction",  label: "Construction" },
   { id: "documentation", label: "Property Documentation" },
   { id: "video",         label: "Cinematic Video" },
-  { id: "commercial",    label: "Commercial Projects" }
+  { id: "commercial",    label: "Commercial Projects" },
+  { id: "scenic",        label: "Scenic & Landmarks" }
 ];
 
 window.PORTFOLIO_PROJECTS = [
+  {
+    id: "p-golden-hour",
+    title: "Golden Hour Over the Water",
+    slug: "golden-hour-water",
+    category: "scenic",
+    location: "",
+    date: "",
+    description: "Sunset aerial with the sky mirrored across calm water.",
+    thumbnail: { file: "assets/projects/golden-hour-water/photo-01", widths: [640, 1280, 1920, 2560], alt: "Aerial view at sunset over a calm, reflective lake lined with trees" },
+    images: [
+      { file: "assets/projects/golden-hour-water/photo-01", widths: [640, 1280, 1920, 2560], alt: "Aerial view at sunset over a calm, reflective lake lined with trees", caption: "Golden hour over the water" }
+    ],
+    videoUrl: "",
+    featured: true,
+    sampleProject: false
+  },
+  {
+    id: "p-rail-bridge",
+    title: "Rappahannock River Rail Bridge",
+    slug: "rappahannock-rail-bridge",
+    category: "scenic",
+    location: "Rappahannock River, VA",
+    date: "",
+    description: "The historic concrete arch railroad bridge, captured from above the tree line.",
+    thumbnail: { file: "assets/projects/rappahannock-rail-bridge/photo-01", widths: [640, 1280, 1920, 2560], alt: "Aerial view of a concrete arch railroad bridge over the Rappahannock River" },
+    images: [
+      { file: "assets/projects/rappahannock-rail-bridge/photo-01", widths: [640, 1280, 1920, 2560], alt: "Aerial view of a concrete arch railroad bridge over the Rappahannock River", caption: "Concrete arch rail bridge over the Rappahannock River" }
+    ],
+    videoUrl: "",
+    featured: true,
+    sampleProject: false
+  },
+  {
+    id: "p-water-tower",
+    title: "Stafford Water Tower",
+    slug: "stafford-water-tower",
+    category: "documentation",
+    location: "Stafford, VA",
+    date: "",
+    description: "Structure documentation: a clear, full-height view of the tower and surrounding site.",
+    thumbnail: { file: "assets/projects/stafford-water-tower/photo-01", widths: [640, 1280, 1920, 2560], alt: "Aerial view of the Stafford, Virginia water tower and its fenced site" },
+    images: [
+      { file: "assets/projects/stafford-water-tower/photo-01", widths: [640, 1280, 1920, 2560], alt: "Aerial view of the Stafford, Virginia water tower and its fenced site", caption: "Full-height view of the Stafford water tower" }
+    ],
+    videoUrl: "",
+    featured: true,
+    sampleProject: false
+  },
+  {
+    id: "p-neighborhood",
+    title: "Neighborhood Overview",
+    slug: "neighborhood-overview",
+    category: "real-estate",
+    location: "",
+    date: "2026-07",
+    description: "A wide aerial showing homes, lots and the tree-lined setting, the kind of context buyers love.",
+    thumbnail: { file: "assets/projects/neighborhood-overview/photo-01", widths: [640, 1280, 1920, 2560], alt: "Wide aerial of a wooded residential neighborhood with large lots" },
+    images: [
+      { file: "assets/projects/neighborhood-overview/photo-01", widths: [640, 1280, 1920, 2560], alt: "Wide aerial of a wooded residential neighborhood with large lots", caption: "Wide neighborhood context shot" }
+    ],
+    videoUrl: "",
+    featured: false,
+    sampleProject: false
+  },
+  {
+    id: "p-top-down",
+    title: "Top-Down Property & Roof View",
+    slug: "top-down-property",
+    category: "documentation",
+    location: "",
+    date: "2026-08",
+    description: "A straight-down view of a home, roof and yard, useful for roof documentation and lot layout.",
+    thumbnail: { file: "assets/projects/top-down-property/photo-01", widths: [640, 1280, 1920, 2560], alt: "Straight-down aerial view of a house roof, driveway and backyard surrounded by trees" },
+    images: [
+      { file: "assets/projects/top-down-property/photo-01", widths: [640, 1280, 1920, 2560], alt: "Straight-down aerial view of a house roof, driveway and backyard surrounded by trees", caption: "Top-down view of roof, driveway and yard" }
+    ],
+    videoUrl: "",
+    featured: false,
+    sampleProject: false
+  },
+  {
+    id: "p-retail",
+    title: "Retail Center Overview",
+    slug: "retail-center-overview",
+    category: "commercial",
+    location: "",
+    date: "",
+    description: "A commercial overview of a shopping center, parking and road access.",
+    thumbnail: { file: "assets/projects/retail-center-overview/photo-01", widths: [640, 1280, 1920, 2560], alt: "Aerial overview of a shopping center with parking lots and surrounding roads" },
+    images: [
+      { file: "assets/projects/retail-center-overview/photo-01", widths: [640, 1280, 1920, 2560], alt: "Aerial overview of a shopping center with parking lots and surrounding roads", caption: "Retail center, parking and access roads" }
+    ],
+    videoUrl: "",
+    featured: false,
+    sampleProject: false
+  },
+  {
+    id: "p-lakeside",
+    title: "Lakeside Community",
+    slug: "lakeside-community",
+    category: "scenic",
+    location: "",
+    date: "",
+    description: "Summer afternoon over a neighborhood lake, dam and shoreline.",
+    thumbnail: { file: "assets/projects/lakeside-community/photo-01", widths: [640, 1280, 1920, 2560], alt: "Aerial view of a calm neighborhood lake with a grassy dam and wooded shoreline" },
+    images: [
+      { file: "assets/projects/lakeside-community/photo-01", widths: [640, 1280, 1920, 2560], alt: "Aerial view of a calm neighborhood lake with a grassy dam and wooded shoreline", caption: "Lake, dam and shoreline on a summer afternoon" }
+    ],
+    videoUrl: "",
+    featured: false,
+    sampleProject: false
+  },
   {
     id: "demo-construction",
     title: "Residential Construction Progress",
@@ -55,7 +168,7 @@ window.PORTFOLIO_PROJECTS = [
       { src: "assets/projects/construction-demo/visit-4.svg", alt: "Illustration: completed home with lawn, driveway and landscaping", caption: "Visit 4: Completed property (illustration)" }
     ],
     videoUrl: "",
-    featured: true,
+    featured: false,
     sampleProject: true
   }
 
