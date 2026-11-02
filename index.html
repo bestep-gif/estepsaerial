@@ -1,447 +1,403 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Estep's Aerial | Drone Photography, Video &amp; Inspections</title>
-<link rel="icon" href="images/favicon.png">
-<meta name="description" content="Estep's Aerial, a division of Estep's Solutions LLC. Friendly, local drone services: aerial photos and video for homes, construction sites, roofs, events and businesses. Free quotes, no obligation.">
-<meta property="og:title" content="Estep's Aerial | Friendly Aerial Drone Services">
-<meta property="og:description" content="Aerial photos and video for homes, projects, roofs and events. Free quotes, no obligation.">
+<title>Estep's Aerial | Drone Photography &amp; Construction Monitoring in Stafford, VA</title>
+<meta name="description" content="FAA Part 107 certified drone photography, cinematic video and construction progress monitoring for Stafford, Fredericksburg, Spotsylvania and surrounding Northern Virginia communities. Free quotes.">
+<link rel="canonical" href="https://aerial.estepssolutionsllc.com/">
+<meta name="theme-color" content="#0a1524">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Estep's Aerial">
+<meta property="og:title" content="Estep's Aerial | Drone Photography &amp; Construction Monitoring">
+<meta property="og:description" content="Aerial photography, cinematic video and construction progress documentation in Stafford, Fredericksburg and Spotsylvania, VA.">
 <meta property="og:url" content="https://aerial.estepssolutionsllc.com/">
-<meta property="og:image" content="https://aerial.estepssolutionsllc.com/images/logo.png">
+<meta property="og:image" content="https://aerial.estepssolutionsllc.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#ffffff; --soft:#f3f8fc; --sky:#e3f1fc; --card:#ffffff; --line:#e1eaf2;
-    --text:#0f2744; --muted:#526379; --brand:#1e90e6; --brand-d:#0f2744; --warm:#ff9f43; --warm-soft:#fff4e8;
-    --radius:20px; --max:1120px; --shadow:0 10px 30px -12px #16283a26;
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/logo-light.webp" type="image/webp">
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://aerial.estepssolutionsllc.com/#business",
+  "name": "Estep's Aerial",
+  "description": "Drone photography, cinematic aerial video, roof and property documentation, and construction progress monitoring.",
+  "url": "https://aerial.estepssolutionsllc.com/",
+  "email": "bestep@estepssolutionsllc.com",
+  "logo": "https://aerial.estepssolutionsllc.com/assets/img/logo.png",
+  "image": "https://aerial.estepssolutionsllc.com/assets/img/og-image.jpg",
+  "parentOrganization": { "@type": "Organization", "name": "Estep's Solutions LLC", "url": "https://estepssolutionsllc.com/" },
+  "areaServed": [
+    { "@type": "City", "name": "Stafford", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+    { "@type": "City", "name": "Fredericksburg", "containedInPlace": { "@type": "State", "name": "Virginia" } },
+    { "@type": "AdministrativeArea", "name": "Spotsylvania County, Virginia" },
+    { "@type": "AdministrativeArea", "name": "Northern Virginia" }
+  ],
+  "knowsAbout": ["Drone photography", "Aerial videography", "Real estate aerial photography", "Construction progress monitoring", "Roof documentation"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Drone services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Real estate & property drone photography" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Construction progress monitoring", "url": "https://aerial.estepssolutionsllc.com/construction-monitoring/" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Roof & property documentation" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cinematic drone video" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business & event aerial promotion" } }
+    ]
   }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased}
-  h1,h2,h3{font-family:Nunito,Inter,sans-serif;line-height:1.15;font-weight:800}
-  a{color:inherit}
-  img{max-width:100%;display:block}
-  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
-  section{padding:92px 0}
-  .eyebrow{display:inline-block;font-size:.82rem;font-weight:600;color:var(--brand);background:var(--sky);padding:6px 14px;border-radius:999px;margin-bottom:16px}
-  .lead{color:var(--muted);font-size:1.12rem;max-width:640px}
-  .center{text-align:center}.center .lead{margin:0 auto}
-  .btn{display:inline-flex;align-items:center;gap:8px;padding:15px 28px;border-radius:999px;font-weight:600;text-decoration:none;transition:.2s;border:2px solid transparent;cursor:pointer;font-size:1rem;font-family:inherit}
-  .btn-primary{background:var(--brand);color:#fff;box-shadow:0 8px 20px -8px #1f7ae0aa}
-  .btn-primary:hover{background:var(--brand-d);transform:translateY(-2px)}
-  .btn-ghost{border-color:var(--line);color:var(--text);background:#fff}
-  .btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
-
-  header{position:fixed;top:0;left:0;right:0;z-index:50;transition:.25s;background:#ffffffcc;backdrop-filter:blur(10px)}
-  header.scrolled{box-shadow:0 1px 0 var(--line)}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-  .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:Nunito;font-weight:800;font-size:1.15rem}
-  .logo .mark{height:40px;width:auto}.logo span{display:flex;flex-direction:column;line-height:1.1}.logo small{font-family:Inter;font-weight:500;font-size:.68rem;color:var(--muted);letter-spacing:.02em}
-  .nav ul{display:flex;gap:28px;list-style:none;align-items:center}
-  .nav ul a{text-decoration:none;color:var(--muted);font-weight:500;font-size:.95rem}
-  .nav ul a:hover{color:var(--brand)}
-  .nav .btn{padding:10px 20px;font-size:.92rem;color:#fff}
-  .menu-btn{display:none;background:none;border:0;color:var(--text);font-size:1.6rem;cursor:pointer}
-
-  /* Hero */
-  .hero{padding:150px 0 90px;background:linear-gradient(180deg,#dff0fc 0%,#f3f8fc 55%,#fff 100%);position:relative;overflow:hidden}
-  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
-  .hero h1{font-size:clamp(2.4rem,5.2vw,3.9rem);margin-bottom:20px}
-  .hero h1 span{color:var(--brand)}
-  .hero .lead{margin-bottom:32px}
-  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
-  .reassure{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;color:var(--muted);font-size:.93rem}
-  .reassure span{display:flex;align-items:center;gap:7px}
-  .reassure i{width:20px;height:20px;border-radius:50%;background:#2fbf71;color:#fff;font-style:normal;font-size:.7rem;display:grid;place-items:center}
-  .hero-photo{position:relative;aspect-ratio:1/1.02;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);background:#fff;display:grid;place-items:start center;max-width:520px;justify-self:center;width:100%}
-  .hero-photo .hero-logo{width:92%;margin-top:-2%;animation:hover 5s ease-in-out infinite}
-  .hero-photo .cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-  @keyframes hover{50%{transform:translateY(-8px)}}
-  .float-card{position:absolute;bottom:18px;left:18px;right:18px;background:#fffffff0;border-radius:16px;padding:14px 18px;display:flex;gap:12px;align-items:center;font-size:.92rem;box-shadow:var(--shadow)}
-  .float-card b{display:block;font-size:.95rem}
-  .float-card span{color:var(--muted);font-size:.85rem}
-  .float-card .dot{width:40px;height:40px;border-radius:12px;background:var(--warm-soft);display:grid;place-items:center;font-size:1.2rem;flex:none}
-  @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:120px}}
-
-  /* Helper */
-  .helper{background:#fff;padding-top:20px}
-  .helper-box{background:var(--soft);border:1px solid var(--line);border-radius:28px;padding:44px}
-  .helper-box h2{font-size:clamp(1.7rem,3.2vw,2.2rem);margin-bottom:8px}
-  .choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:26px}
-  .choice{background:#fff;border:2px solid var(--line);border-radius:16px;padding:18px;cursor:pointer;text-align:left;font-family:inherit;font-size:.98rem;color:var(--text);transition:.2s;display:flex;gap:12px;align-items:center}
-  .choice:hover,.choice.on{border-color:var(--brand);transform:translateY(-2px)}
-  .choice .em{font-size:1.5rem}
-  .answer{display:none;margin-top:22px;background:#fff;border-radius:16px;padding:22px 24px;border-left:5px solid var(--brand);box-shadow:var(--shadow)}
-  .answer.show{display:block;animation:fade .35s}
-  @keyframes fade{from{opacity:0;transform:translateY(6px)}}
-  .answer h3{font-size:1.2rem;margin-bottom:6px}
-  .answer p{color:var(--muted);margin-bottom:14px}
-
-  /* Services */
-  .section-head{margin-bottom:48px}
-  .section-head h2{font-size:clamp(2rem,4vw,2.7rem);margin-bottom:12px}
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px;transition:.25s}
-  .card:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
-  .card .icon{width:54px;height:54px;border-radius:16px;background:var(--sky);display:grid;place-items:center;margin-bottom:18px;font-size:1.6rem}
-  .card h3{font-size:1.28rem;margin-bottom:8px}
-  .card p{color:var(--muted);font-size:.97rem;margin-bottom:14px}
-  .card .good{font-size:.88rem;color:var(--text);background:var(--soft);border-radius:12px;padding:10px 14px}
-  .card .good b{color:var(--brand)}
-
-  /* Portfolio */
-  .work{background:var(--soft)}
-  .filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;justify-content:center}
-  .filters button{background:#fff;border:1px solid var(--line);color:var(--muted);padding:9px 18px;border-radius:999px;cursor:pointer;font-family:inherit;font-size:.92rem}
-  .filters button.active,.filters button:hover{border-color:var(--brand);color:var(--brand)}
-  .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px}
-  .item{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:16/10;background:linear-gradient(160deg,#cfe6f7,#e9f3fa);cursor:pointer;box-shadow:0 4px 14px -8px #16283a33}
-  .item img,.item iframe{width:100%;height:100%;object-fit:cover;border:0;transition:transform .5s}
-  .item:hover img{transform:scale(1.05)}
-  .item .ph{position:absolute;inset:0;display:grid;place-items:center;color:#5a6d8099;font-size:.85rem;text-align:center;padding:20px}
-  .item .cap{position:absolute;left:12px;bottom:12px;background:#fffffff2;border-radius:12px;padding:8px 14px;font-size:.9rem;font-weight:500}
-  .item .cap small{color:var(--brand);font-weight:600;margin-right:6px}
-  .item.hide{display:none}
-  .lightbox{position:fixed;inset:0;background:#0b1622e6;display:none;align-items:center;justify-content:center;z-index:100;padding:30px}
-  .lightbox.open{display:flex}
-  .lightbox img{max-height:88vh;border-radius:14px}
-  .lightbox button{position:absolute;top:20px;right:26px;background:none;border:0;color:#fff;font-size:2rem;cursor:pointer}
-
-  /* Steps */
-  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;counter-reset:s}
-  .step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;counter-increment:s;position:relative}
-  .step::before{content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--brand);color:#fff;font-family:Nunito;font-weight:800;display:grid;place-items:center;margin-bottom:16px}
-  .step h3{font-size:1.15rem;margin-bottom:6px}
-  .step p{color:var(--muted);font-size:.95rem}
-
-  /* About */
-  .about{background:var(--soft)}
-  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
-  .about-img{aspect-ratio:4/4.6;border-radius:28px;background:linear-gradient(160deg,#cfe6f7,#e9f3fa);display:grid;place-items:center;color:#5a6d8099;font-size:.85rem;overflow:hidden;box-shadow:var(--shadow)}
-  .about-img img{width:100%;height:100%;object-fit:cover}
-  .about h2{font-size:clamp(2rem,4vw,2.6rem);margin-bottom:16px}
-  .about p{color:var(--muted);margin-bottom:16px}
-  .promise{display:grid;gap:10px;margin-top:22px}
-  .promise div{display:flex;gap:12px;align-items:flex-start;background:#fff;border-radius:14px;padding:14px 16px;border:1px solid var(--line)}
-  .promise b{display:block}
-  .promise span{color:var(--muted);font-size:.9rem}
-  @media(max-width:860px){.about-grid{grid-template-columns:1fr}}
-
-  /* FAQ */
-  .faq-list{max-width:780px;margin:0 auto;display:grid;gap:12px}
-  details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:4px 22px;transition:.2s}
-  details[open]{box-shadow:var(--shadow);border-color:#cfe0ef}
-  summary{cursor:pointer;list-style:none;padding:16px 0;font-weight:600;display:flex;justify-content:space-between;gap:14px;font-size:1.02rem}
-  summary::-webkit-details-marker{display:none}
-  summary::after{content:"+";color:var(--brand);font-size:1.4rem;line-height:1}
-  details[open] summary::after{content:"−"}
-  details p{color:var(--muted);padding-bottom:18px}
-
-  /* Contact */
-  .contact{background:linear-gradient(180deg,#fff,#e6f2fb)}
-  .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:50px;align-items:start}
-  .contact-info h2{font-size:clamp(2rem,4vw,2.6rem);margin-bottom:14px}
-  .contact-info p{color:var(--muted);margin-bottom:24px}
-  .contact-info a{display:flex;gap:12px;align-items:center;text-decoration:none;margin-bottom:12px;font-weight:500}
-  .contact-info a:hover{color:var(--brand)}
-  .note{background:var(--warm-soft);border-radius:14px;padding:14px 18px;font-size:.92rem;margin-top:20px}
-  form{background:#fff;border-radius:24px;padding:32px;display:grid;gap:16px;box-shadow:var(--shadow)}
-  form h3{font-size:1.3rem}
-  .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-  label{font-size:.88rem;color:var(--text);font-weight:500;display:grid;gap:6px}
-  label em{color:var(--muted);font-style:normal;font-weight:400}
-  input,select,textarea{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:var(--text);font:inherit;font-size:.96rem}
-  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--brand);background:#fff}
-  textarea{min-height:110px;resize:vertical}
-  .small{font-size:.84rem;color:var(--muted);text-align:center}
-  @media(max-width:860px){.contact-grid,.row{grid-template-columns:1fr}}
-
-  footer{padding:34px 0;color:var(--muted);font-size:.88rem;background:#e6f2fb}
-  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
-
-  @media(max-width:860px){
-    .nav ul{position:fixed;top:72px;left:0;right:0;flex-direction:column;background:#fff;padding:24px;gap:18px;box-shadow:var(--shadow);display:none}
-    .nav ul.open{display:flex}
-    .menu-btn{display:block}
-    section{padding:70px 0}
-    .helper-box{padding:28px}
-  }
-  .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s,transform .7s}
-  .reveal.in{opacity:1;transform:none}
-</style>
+}
+</script>
 </head>
-<body>
+<body data-base="">
+<a class="skip" href="#main">Skip to content</a>
 
-<header>
-  <div class="wrap nav">
-    <a href="#" class="logo" aria-label="Estep's Aerial home">
-      <img src="images/logo-mark.png" alt="" class="mark">
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a href="./" class="brand" aria-label="Estep's Aerial home">
+      <img src="assets/img/logo-mark-light.png" alt="" width="220" height="84">
       <span>Estep's Aerial<small>A division of Estep's Solutions LLC</small></span>
     </a>
-    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">&#9776;</button>
-    <ul id="menu">
+    <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
       <li><a href="#services">Services</a></li>
-      <li><a href="#work">Our Work</a></li>
-      <li><a href="#how">How It Works</a></li>
+      <li><a href="construction-monitoring/">Construction</a></li>
+      <li><a href="#work">Portfolio</a></li>
+      <li><a href="#flight-studio">Flight Studio</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact" class="btn btn-primary">Free Quote</a></li>
+      <li><a href="#quote" class="btn btn-primary btn-sm">Free Quote</a></li>
     </ul>
-  </div>
+  </nav>
 </header>
 
-<section class="hero">
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-media" id="hero-media"></div>
+  <svg class="hero-topo" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g fill="none" stroke="#5cb8f2" stroke-opacity=".25" stroke-width="1.2">
+    <path d="M-20 620 C180 560 320 640 520 590 S880 470 1220 540"/><path d="M-20 660 C200 600 330 690 540 640 S900 520 1220 590"/><path d="M-20 700 C220 650 360 730 560 690 S920 570 1220 640"/>
+    <path d="M700 120 C820 60 980 90 1040 170 S1000 330 880 330 S690 260 700 120Z"/><path d="M740 140 C840 95 960 120 1005 180 S970 300 880 300 S730 240 740 140Z"/><path d="M790 165 C860 135 930 150 960 190 S940 265 880 268 S780 225 790 165Z"/>
+  </g></svg>
+  <div class="hero-shade"></div>
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">&#128075; Friendly, local drone services</span>
-      <h1>Beautiful aerial photos &amp; video, <span>made easy.</span></h1>
-      <p class="lead">Never hired a drone pilot before? No problem. Tell me what you'd like to show off and I'll handle the rest: planning, flying, editing and delivery.</p>
+      <p class="eyebrow">Drone photography · Video · Construction documentation</p>
+      <h1 id="hero-title">See Your Property From a <em>Whole New Perspective.</em></h1>
+      <p class="lead">Professional drone photography, cinematic video, and construction progress documentation serving <span data-config="serviceAreaLong">Stafford, Fredericksburg, Spotsylvania and surrounding Northern Virginia communities</span>. Never hired a drone pilot before? No problem. I'll handle the planning, flying and editing.</p>
       <div class="hero-ctas">
-        <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
-        <a href="#start" class="btn btn-ghost">Help me choose</a>
+        <a href="#quote" class="btn btn-primary">Request a Free Quote</a>
+        <a href="#work" class="btn btn-ghost">Explore Our Work</a>
       </div>
-      <div class="reassure">
-        <!-- EDIT: only keep what's true for you -->
-        <span><i>&#10003;</i> Free quotes, no obligation</span>
-        <span><i>&#10003;</i> FAA-certified pilot</span>
-        <span><i>&#10003;</i> Fast turnaround</span>
-      </div>
+      <p class="hero-note">Free quotes · No obligation · FAA Part 107 certified</p>
     </div>
-    <div class="hero-photo reveal">
-      <!-- Once you have a great aerial shot, you can swap the logo for it:
-           <img src="images/hero.jpg" alt="Aerial view of a home" class="cover"> -->
-      <img src="images/logo.png" alt="Estep's Aerial, a division of Estep's Solutions LLC" class="hero-logo">
-      <div class="float-card"><div class="dot">&#128247;</div><div><b>Your photos, ready to share</b><span>Edited and delivered by download link</span></div></div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="halo"></div>
+      <picture><source srcset="assets/img/logo-light.webp" type="image/webp"><img src="assets/img/logo-light.png" alt="" width="720" height="720" fetchpriority="high"></picture>
     </div>
   </div>
 </section>
 
-<section class="helper" id="start">
+<section class="trust" aria-label="Why choose Estep's Aerial">
+  <div class="wrap">
+    <div class="trust-inner">
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l7 3v6c0 4.4-3 7.7-7 9-4-1.3-7-4.6-7-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><div><b>FAA Part 107</b>Certified remote pilot</div></div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0119 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><b>Locally operated</b>Right here in Virginia</div></div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 7h3l2-3h8l2 3h3v13H3z"/><circle cx="12" cy="13" r="4"/></svg><div><b>Photo &amp; video</b>Professionally edited</div></div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11"/><path d="M9 21v-6h6v6"/></svg><div><b>Construction</b>Progress documentation</div></div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></svg><div><b>Custom reports</b>Organized deliverables</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="start" aria-labelledby="start-title">
   <div class="wrap">
     <div class="helper-box reveal">
-      <span class="eyebrow">Not sure where to start?</span>
-      <h2>What are you hoping to do?</h2>
-      <p class="lead">Pick the one that sounds most like you. I'll point you in the right direction.</p>
+      <p class="eyebrow">Not sure where to start?</p>
+      <h2 id="start-title">What are you hoping to do?</h2>
+      <p class="lead">Pick the one that sounds most like you and I'll point you in the right direction.</p>
       <div class="choices">
-        <button class="choice" data-k="sell"><span class="em">&#127968;</span>Sell or rent a property</button>
-        <button class="choice" data-k="build"><span class="em">&#127959;&#65039;</span>Track a construction project</button>
-        <button class="choice" data-k="roof"><span class="em">&#128269;</span>Check a roof or damage</button>
-        <button class="choice" data-k="promo"><span class="em">&#127881;</span>Promote a business or event</button>
-        <button class="choice" data-k="fun"><span class="em">&#10024;</span>Something personal or creative</button>
+        <button class="choice" type="button" data-k="sell" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1z"/></svg>Sell or market a property</button>
+        <button class="choice" type="button" data-k="build" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 20h20M5 20V9l7-5 7 5v11"/><path d="M9 13h6"/></svg>Track a construction project</button>
+        <button class="choice" type="button" data-k="roof" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>Document a roof or property</button>
+        <button class="choice" type="button" data-k="promo" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M15 10l5-3v10l-5-3M3 6h12v12H3z"/></svg>Promote a business or event</button>
+        <button class="choice" type="button" data-k="other" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l2.6 5.6L20 9.5l-4 4 1 5.5-5-2.8-5 2.8 1-5.5-4-4 5.4-.9z"/></svg>Something else</button>
       </div>
-      <div class="answer" id="answer"><h3></h3><p></p><a href="#contact" class="btn btn-primary" id="answer-btn">Get a quote for this</a></div>
+      <div class="answer" id="answer" hidden aria-live="polite">
+        <h3></h3><p></p>
+        <div class="row-btns">
+          <a href="#quote" class="btn btn-primary btn-sm" data-answer-quote data-service="other">Get a quote for this</a>
+          <a href="construction-monitoring/" class="btn btn-ghost btn-sm" data-answer-more hidden>Explore Construction Monitoring</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="services">
+<section id="services" class="alt" aria-labelledby="services-title">
   <div class="wrap">
-    <div class="section-head center reveal">
-      <span class="eyebrow">Services</span>
-      <h2>How I can help</h2>
-      <p class="lead">Every job includes the planning, the flight and edited results. You don't need to know anything about drones.</p>
+    <div class="section-head reveal">
+      <p class="eyebrow">Services</p>
+      <h2 id="services-title">How I can help</h2>
+      <p class="lead">Every job includes flight planning, airspace checks and edited results. You don't need to know anything about drones.</p>
     </div>
-    <div class="cards">
-      <div class="card reveal"><div class="icon">&#127968;</div><h3>Homes &amp; Property</h3><p>Show buyers the whole picture: the house, the yard, the land and what's nearby.</p><div class="good"><b>Great for:</b> homeowners, realtors, land sellers</div></div>
-      <div class="card reveal"><div class="icon">&#127959;&#65039;</div><h3>Construction Updates</h3><p>Regular flights from the same spots so you can see the project progress over time.</p><div class="good"><b>Great for:</b> builders, contractors, project owners</div></div>
-      <div class="card reveal"><div class="icon">&#128269;</div><h3>Roof &amp; Property Checks</h3><p>Clear, close-up photos of roofs and hard-to-reach places. No ladders, no climbing.</p><div class="good"><b>Great for:</b> storm damage, insurance claims, upkeep</div></div>
-      <div class="card reveal"><div class="icon">&#127909;</div><h3>Fly-Through Videos</h3><p>Smooth, eye-catching videos that glide through a home, shop or venue in one shot.</p><div class="good"><b>Great for:</b> businesses, venues, social media</div></div>
-      <div class="card reveal"><div class="icon">&#127881;</div><h3>Events &amp; Promotions</h3><p>Aerial highlights of your event or business that make people stop scrolling.</p><div class="good"><b>Great for:</b> events, local shops, organizations</div></div>
-      <div class="card reveal"><div class="icon">&#128506;&#65039;</div><h3>Flight Data Videos</h3><p>Video with height, speed and a map shown on screen, made with my own Flight Studio app.</p><div class="good"><b>Great for:</b> reports, records, fellow pilots</div></div>
+    <div class="svc-grid">
+
+      <article class="svc featured reveal">
+        <div class="svc-visual">
+          <img src="assets/projects/construction-demo/visit-2.svg" alt="Illustration of a home being framed, seen from above" loading="lazy" width="1600" height="1000">
+          <span class="tag feat">Featured service</span>
+        </div>
+        <div class="svc-body">
+          <h3>Construction Progress Monitoring</h3>
+          <p>Scheduled site visits from the same aerial viewpoints, so builders and owners can see exactly how a project is moving, without driving out to the site.</p>
+          <ul>
+            <li>Scheduled visits with consistent aerial viewpoints</li>
+            <li>Milestone comparisons and documentation over time</li>
+            <li>Photos organized by date and location</li>
+            <li>Downloadable progress reports</li>
+            <li>Optional interior progress photos when arranged</li>
+          </ul>
+          <div class="svc-actions">
+            <a href="construction-monitoring/" class="btn btn-primary btn-sm">Explore Construction Monitoring</a>
+            <a href="#quote" class="link-arrow" data-service="construction">Get Construction Monitoring Pricing &rarr;</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc-visual"><div class="glyph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 34L32 14l24 20"/><path d="M14 30v22h36V30"/><path d="M27 52V40h10v12"/><path d="M4 56h56" stroke-dasharray="3 4"/></svg></div></div>
+        <div class="svc-body">
+          <h3>Real Estate &amp; Property Photography</h3>
+          <p>Show buyers the whole picture: the home, the land and everything nearby.</p>
+          <ul><li>Residential &amp; luxury listings</li><li>Land and acreage</li><li>Commercial property overviews</li></ul>
+          <div class="svc-actions"><a href="#quote" class="btn btn-ghost btn-sm" data-service="real-estate">Request Aerial Photography Quote</a><a href="#work" class="link-arrow">Portfolio &rarr;</a></div>
+        </div>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc-visual"><div class="glyph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 36L32 16l26 20"/><path d="M12 32v20h40V32"/><circle cx="44" cy="22" r="9"/><path d="M50.5 28.5L57 35"/></svg></div></div>
+        <div class="svc-body">
+          <h3>Roof &amp; Property Documentation</h3>
+          <p>Detailed, organized photos of roofs, exterior structures and hard-to-reach areas. No ladders, no climbing.</p>
+          <ul><li>Close, high-resolution detail images</li><li>Before/after storm records</li><li>Organized delivery for your files</li></ul>
+          <p class="note">Visual documentation only. It doesn't replace an inspection by a licensed roofer, engineer or insurance adjuster.</p>
+          <div class="svc-actions"><a href="#quote" class="btn btn-ghost btn-sm" data-service="documentation">Discuss Your Project</a></div>
+        </div>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc-visual"><div class="glyph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="6" y="16" width="38" height="32" rx="4"/><path d="M44 27l14-8v26l-14-8"/><path d="M20 26l10 6-10 6z"/></svg></div></div>
+        <div class="svc-body">
+          <h3>Cinematic Drone Video</h3>
+          <p>Smooth, cinematic footage that makes a property or place feel special.</p>
+          <ul><li>Property and promotional films</li><li>Fly-through filming where safe and appropriate</li><li>Social-ready vertical edits</li></ul>
+          <div class="svc-actions"><a href="#quote" class="btn btn-ghost btn-sm" data-service="video">Request a Video Quote</a></div>
+        </div>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc-visual"><div class="glyph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 26h44v28H10z"/><path d="M6 26l6-12h40l6 12"/><path d="M26 54V40h12v14"/><path d="M14 20h36" stroke-dasharray="2 4"/></svg></div></div>
+        <div class="svc-body">
+          <h3>Business &amp; Event Promotions</h3>
+          <p>Aerial content that helps local businesses, venues and events stand out.</p>
+          <ul><li>Business promotional videos</li><li>Outdoor event coverage</li><li>Tourism, venue &amp; social media content</li></ul>
+          <div class="svc-actions"><a href="#quote" class="btn btn-ghost btn-sm" data-service="business">Discuss Your Project</a></div>
+        </div>
+      </article>
+
+      <article class="svc reveal">
+        <div class="svc-visual"><div class="glyph"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 50l14-16 10 8 14-20 14 12"/><circle cx="44" cy="22" r="3"/><path d="M6 10v44h52"/></svg></div></div>
+        <div class="svc-body">
+          <h3>Advanced Flight Data &amp; Reporting</h3>
+          <p>Video presentations with available telemetry (location, altitude, speed and a synchronized map), produced with my own Flight Studio software.</p>
+          <ul><li>Telemetry &amp; map overlays</li><li>Flight log documentation</li><li>Great for reports and records</li></ul>
+          <div class="svc-actions"><a href="#flight-studio" class="btn btn-ghost btn-sm">See Flight Studio</a></div>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
 
-<section class="work" id="work">
+<section id="work" aria-labelledby="work-title">
   <div class="wrap">
-    <div class="section-head center reveal">
-      <span class="eyebrow">Our Work</span>
-      <h2>A few recent flights</h2>
-      <p class="lead">Tap any photo to see it bigger.</p>
+    <div class="section-head reveal">
+      <p class="eyebrow">Portfolio</p>
+      <h2 id="work-title">Explore the work</h2>
+      <p class="lead">Select a project to view the full gallery. Use the arrow keys or swipe to move between images.</p>
     </div>
-    <div class="filters">
-      <button class="active" data-f="all">All</button>
-      <button data-f="property">Homes</button>
-      <button data-f="construction">Construction</button>
-      <button data-f="video">Video</button>
-    </div>
-    <!--
-      HOW TO ADD YOUR WORK:
-      - Photos: put them in /images and swap <div class="ph">...</div> for
-        <img src="images/your-photo.jpg" alt="Short description">
-      - YouTube: swap the placeholder for
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
-      - data-cat decides which filter shows it.
-    -->
-    <div class="gallery">
-      <div class="item reveal" data-cat="property"><div class="ph">Add photo: images/property-1.jpg</div><div class="cap"><small>Home</small>Family home listing</div></div>
-      <div class="item reveal" data-cat="construction"><div class="ph">Add photo: images/construction-1.jpg</div><div class="cap"><small>Construction</small>Monthly site update</div></div>
-      <div class="item reveal" data-cat="video"><div class="ph">Add YouTube video</div><div class="cap"><small>Video</small>Fly-through tour</div></div>
-      <div class="item reveal" data-cat="property"><div class="ph">Add photo: images/property-2.jpg</div><div class="cap"><small>Land</small>Acreage overview</div></div>
-      <div class="item reveal" data-cat="video"><div class="ph">Add YouTube video</div><div class="cap"><small>Video</small>Highlight reel</div></div>
-      <div class="item reveal" data-cat="construction"><div class="ph">Add photo: images/roof-1.jpg</div><div class="cap"><small>Roof</small>Storm damage check</div></div>
-    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+    <div class="gallery" id="gallery" aria-live="polite"></div>
   </div>
 </section>
 
-<section id="how">
+<section id="how" class="alt" aria-labelledby="how-title">
   <div class="wrap">
     <div class="section-head center reveal">
-      <span class="eyebrow">How It Works</span>
-      <h2>Four simple steps</h2>
+      <p class="eyebrow">How it works</p>
+      <h2 id="how-title">Four simple steps</h2>
       <p class="lead">Here's exactly what to expect, from first message to finished photos.</p>
     </div>
     <div class="steps">
-      <div class="step reveal"><h3>Say hello</h3><p>Fill out the short form below. A rough idea is plenty; I'll ask any questions I need.</p></div>
-      <div class="step reveal"><h3>Get a clear quote</h3><p>I'll check the location and send a simple, up-front price. No surprises.</p></div>
-      <div class="step reveal"><h3>I fly, you relax</h3><p>I handle permissions, safety and weather. You don't even need to be there.</p></div>
-      <div class="step reveal"><h3>Enjoy your results</h3><p>You'll get edited photos and video by download link, ready to share anywhere.</p></div>
+      <div class="step reveal"><h3>Say hello</h3><p>Fill out the short form. A rough idea is plenty; I'll ask any questions I need.</p></div>
+      <div class="step reveal"><h3>Get a clear quote</h3><p>I check the location and airspace, then send a simple, up-front price.</p></div>
+      <div class="step reveal"><h3>I fly, you relax</h3><p>I handle safety, airspace authorization and weather. You don't need to be on site.</p></div>
+      <div class="step reveal"><h3>Enjoy your results</h3><p>Edited photos and video delivered by download link, ready to share.</p></div>
     </div>
   </div>
 </section>
 
-<section class="about" id="about">
-  <div class="wrap about-grid">
-    <div class="about-img reveal">
-      <!-- Replace with: <img src="images/brandon.jpg" alt="Brandon with his drone"> -->
-      Add a friendly photo: images/brandon.jpg
-    </div>
+<section id="flight-studio" aria-labelledby="fs-title">
+  <div class="wrap fs">
     <div class="reveal">
-      <span class="eyebrow">Meet your pilot</span>
-      <h2>Hi, I'm Brandon! &#128075;</h2>
-      <p>I started Estep's Aerial, the drone division of Estep's Solutions LLC, because I love flying and love helping people see their places in a whole new way. I also build my own drone software, so I'm a little obsessed with getting the details right.</p>
-      <p>Whether this is your first time hiring a drone pilot or your fiftieth, I'll keep things simple, friendly and stress-free.</p>
-      <div class="promise">
-        <div>&#129309;<p><b>Straight answers</b><span>Plain language, honest advice, no jargon.</span></p></div>
-        <div>&#128737;&#65039;<p><b>Safety first</b><span>Every flight is planned and checked before takeoff.</span></p></div>
-        <div>&#128515;<p><b>Happy or I'll make it right</b><span>If something's not what you hoped for, just tell me.</span></p></div>
+      <p class="eyebrow">Technology</p>
+      <h2 id="fs-title" style="font-size:clamp(2rem,4vw,2.7rem);margin-bottom:14px">Better Aerial Documentation, Powered by Flight Studio.</h2>
+      <p class="lead">Go beyond ordinary drone footage with synchronized flight information, map-based visualization, and organized reporting capabilities. Flight Studio is software I built and develop myself.</p>
+      <div class="fs-features">
+        <div class="fs-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 15h4M7 11h2M15 9v6"/></svg><div><b>Telemetry overlays</b><span>Flight data displayed on the video</span></div></div>
+        <div class="fs-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg><div><b>Synchronized map</b><span>See where each shot was taken</span></div></div>
+        <div class="fs-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 20V4M6 10l6-6 6 6"/></svg><div><b>Altitude &amp; speed</b><span>Shown in feet and mph</span></div></div>
+        <div class="fs-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h5"/></svg><div><b>Flight log documentation</b><span>Organized records of each flight</span></div></div>
+        <div class="fs-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11"/></svg><div><b>Construction reporting <span class="soon">In development</span></b><span>Project-based progress reports</span></div></div>
+        <div class="fs-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z"/></svg><div><b>Footage presentation</b><span>Clean exports for clients and social</span></div></div>
+      </div>
+      <a class="btn btn-ghost" data-fs-link href="https://flightstudio-us.com/" target="_blank" rel="noopener">Visit Flight Studio &#8599;</a>
+    </div>
+    <div class="fs-visual reveal" id="fs-visual">
+      <div class="hud" role="img" aria-label="Illustration of a telemetry overlay showing altitude, speed and a mini map">
+        <div class="hud-grid"></div>
+        <div class="hud-panel" style="left:14px;top:14px"><small>Altitude</small><b>212 ft</b></div>
+        <div class="hud-panel" style="left:14px;top:84px"><small>Speed</small><b>18 mph</b></div>
+        <div class="hud-panel" style="right:14px;top:14px"><small>Satellites</small><b>24</b></div>
+        <div class="hud-panel hud-map"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" fill="#163a30"/><path d="M0 70 L100 55" stroke="#45505c" stroke-width="7"/><path d="M20 20 h25 v20 h-25z M60 15 h20 v18 h-20z M58 70 h24 v18 h-24z" fill="#2f5a49"/><path d="M15 80 C30 60 40 50 52 42 S70 28 82 22" stroke="#5cb8f2" stroke-width="3" fill="none" stroke-dasharray="4 3"/><circle cx="82" cy="22" r="5" fill="#2fd0bd" stroke="#fff" stroke-width="1.5"/></svg></div>
+        <span class="hud-label">Illustration of an overlay</span>
       </div>
     </div>
   </div>
 </section>
 
-<section id="faq">
+<section id="about" class="alt" aria-labelledby="about-title">
+  <div class="wrap about-grid">
+    <div class="portrait reveal" id="portrait">
+      <img class="logo-fill" src="assets/img/logo-light.webp" alt="Estep's Aerial logo" loading="lazy" width="720" height="720">
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">Meet your pilot</p>
+      <h2 id="about-title">Hi, I'm Brandon. &#128075;</h2>
+      <p>I run Estep's Aerial, the drone services division of Estep's Solutions LLC. I love aerial photography and video and helping people see their places in a whole new way. I'm an FAA Part 107 certified remote pilot.</p>
+      <p>I also build my own drone software, including Flight Studio, so I'm a little obsessed with flight data, organization and getting the details right. Whether this is your first time hiring a drone pilot or your fiftieth, I'll keep things simple, safe and stress-free.</p>
+      <div class="creds">
+        <div class="cred"><b>FAA Part 107</b><span>Certified remote pilot</span></div>
+        <div class="cred"><b>Safety first</b><span>Every flight planned and checked before takeoff</span></div>
+        <div class="cred"><b>DJI Mini 5 Pro</b><span>Aerial photo &amp; 4K video</span></div>
+        <div class="cred"><b>DJI Avata 360</b><span>Immersive fly-through &amp; 360° capture</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" aria-labelledby="faq-title">
   <div class="wrap">
     <div class="section-head center reveal">
-      <span class="eyebrow">Questions</span>
-      <h2>New to drone services?</h2>
+      <p class="eyebrow">Questions</p>
+      <h2 id="faq-title">New to drone services?</h2>
       <p class="lead">Here are answers to the questions people usually ask first.</p>
     </div>
     <div class="faq-list reveal">
       <details><summary>Do I need to know anything about drones?</summary><p>Not at all. Just tell me what you want to show and how you plan to use it. I'll recommend the right shots and take care of everything else.</p></details>
       <details><summary>How much does it cost?</summary><p>It depends on the location and what you need, but quotes are always free and up-front. Send a quick message and you'll get a clear price before anything is booked.</p></details>
-      <details><summary>Is it legal and safe?</summary><p>Yes. I fly under FAA rules, check airspace and weather before every job, and get any permissions needed for the location. <!-- EDIT: confirm Part 107 / insurance wording --></p></details>
+      <details><summary>Is it legal and safe?</summary><p>Yes. I'm an FAA Part 107 certified remote pilot. I check airspace and weather before every job and request any authorization the location requires.</p></details>
+      <details><summary>Which areas do you serve?</summary><p>Stafford, Fredericksburg, Spotsylvania and the surrounding Northern Virginia communities. If you're a bit farther out, just ask.</p></details>
       <details><summary>Do I need to be there during the flight?</summary><p>Nope, though you're welcome to watch! I just need access to the area and a heads-up about anything I should know.</p></details>
       <details><summary>What if the weather is bad?</summary><p>Safety comes first, so if it's too windy or rainy I'll reschedule at no extra cost.</p></details>
+      <details><summary>Can drone photos replace a roof or property inspection?</summary><p>No. Aerial photos are great visual documentation, but they don't replace an inspection by a licensed roofer, engineer or insurance adjuster. Many people share the photos with those professionals.</p></details>
       <details><summary>How quickly will I get my photos?</summary><p>Usually within a few days. If you're on a deadline, let me know and I'll do my best to make it work.</p></details>
-      <details><summary>Can I use the photos and video however I want?</summary><p>Yes. They're yours to use on listings, websites, social media and for personal use.</p></details>
     </div>
   </div>
 </section>
 
-<section class="contact" id="contact">
+<section id="quote" class="alt" aria-labelledby="quote-title">
   <div class="wrap contact-grid">
     <div class="contact-info reveal">
-      <span class="eyebrow">Let's chat</span>
-      <h2>Tell me about your project</h2>
-      <p>No pressure and no commitment. Just send a message and I'll reply, usually within one business day.</p>
-      <a href="mailto:bestep@estepssolutionsllc.com">&#9993;&#65039;&nbsp; bestep@estepssolutionsllc.com</a>
-      <!-- EDIT: your service area -->
-      <a href="#contact">&#128205;&nbsp; Serving [Your City] &amp; nearby areas</a>
-      <div class="note">&#128161; <b>Tip:</b> Not sure what to write? Just share the address and what you'd like people to see. That's enough to get started!</div>
+      <p class="eyebrow">Free quote</p>
+      <h2 id="quote-title">Tell me about your project</h2>
+      <p>No pressure and no commitment. Send a message and I'll reply, usually within one business day.</p>
+      <a class="contact-line" data-email href="mailto:bestep@estepssolutionsllc.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="email-text">bestep@estepssolutionsllc.com</span></a>
+      <p class="contact-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0119 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Serving <span data-config="serviceAreaShort">Stafford, Fredericksburg &amp; Spotsylvania, VA</span></span></p>
+      <div class="tip"><b>Tip:</b> Not sure what to write? The location and what you'd like people to see is plenty to get started.</div>
     </div>
-    <form class="reveal" id="quote">
-      <h3>Request your free quote</h3>
+
+    <form class="form reveal" data-quote-form novalidate aria-labelledby="form-title">
+      <h3 id="form-title">Request your free quote</h3>
       <div class="row">
-        <label>Your name<input name="name" required></label>
-        <label>Email<input name="email" type="email" required></label>
+        <div class="field"><label for="q-name">Full name <span class="req" aria-hidden="true">*</span></label><input id="q-name" name="name" autocomplete="name" required data-label="name" aria-describedby="q-name-err"><p class="err" id="q-name-err"></p></div>
+        <div class="field"><label for="q-email">Email address <span class="req" aria-hidden="true">*</span></label><input id="q-email" name="email" type="email" autocomplete="email" required data-label="email address" aria-describedby="q-email-err"><p class="err" id="q-email-err"></p></div>
       </div>
-      <label>What can I help with?
-        <select name="service" id="service">
-          <option>Homes &amp; Property</option><option>Construction Updates</option>
-          <option>Roof &amp; Property Check</option><option>Fly-Through Video</option>
-          <option>Event or Promotion</option><option>Not sure yet, help me decide</option>
-        </select>
-      </label>
       <div class="row">
-        <label>Location <em>(optional)</em><input name="location" placeholder="City or address"></label>
-        <label>When? <em>(optional)</em><input name="date" type="date"></label>
+        <div class="field"><label for="q-phone">Phone <em>(optional)</em></label><input id="q-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="q-phone-err"><p class="err" id="q-phone-err"></p></div>
+        <div class="field"><label for="q-service">Service requested <span class="req" aria-hidden="true">*</span></label>
+          <select id="q-service" name="service" required data-label="service">
+            <option value="real-estate">Real Estate &amp; Property Photography</option>
+            <option value="construction">Construction Progress Monitoring</option>
+            <option value="documentation">Roof &amp; Property Documentation</option>
+            <option value="video">Cinematic Drone Video</option>
+            <option value="business">Business &amp; Event Promotion</option>
+            <option value="flight-data">Flight Data &amp; Reporting</option>
+            <option value="other">Not sure yet / Something else</option>
+          </select><p class="err"></p></div>
       </div>
-      <label>Anything else? <em>(optional)</em><textarea name="details" placeholder="A sentence or two is perfect."></textarea></label>
-      <button class="btn btn-primary" type="submit" style="justify-content:center">Send My Request</button>
-      <p class="small">Free and no obligation. I'll never share your info.</p>
+      <div class="row">
+        <div class="field"><label for="q-loc">Project city or location <em>(optional)</em></label><input id="q-loc" name="location" placeholder="e.g. Stafford, VA"></div>
+        <div class="field"><label for="q-when">Desired date or timeframe <em>(optional)</em></label><input id="q-when" name="timeframe" placeholder="e.g. next week, before Dec 15"></div>
+      </div>
+      <div class="field"><label for="q-desc">Project description <em>(optional)</em></label><textarea id="q-desc" name="description" placeholder="A sentence or two is perfect."></textarea></div>
+      <div class="field"><label for="q-link">Reference link <em>(optional: listing, site plan, example video)</em></label><input id="q-link" name="reference_link" type="url" placeholder="https://" aria-describedby="q-link-err"><p class="err" id="q-link-err"></p></div>
+      <div class="hp" aria-hidden="true"><label>Leave this empty<input class="hp-input" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+      <div class="form-status" role="status" tabindex="-1" hidden></div>
+      <button class="btn btn-primary" type="submit">Send My Request</button>
+      <p class="small">Free and no obligation. Your details are only used to reply to your request.</p>
     </form>
   </div>
 </section>
 
-<footer>
+</main>
+
+<footer class="site-footer">
   <div class="wrap">
-    <span>&copy; <span id="yr"></span> Estep's Aerial, a division of Estep's Solutions LLC</span>
-    <span>Friendly, safe drone services</span>
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/img/logo-light.webp" alt="Estep's Aerial, a division of Estep's Solutions LLC" width="720" height="720" loading="lazy">
+        <p>Drone photography, video and construction documentation for <span data-config="serviceAreaLong">Stafford, Fredericksburg, Spotsylvania and surrounding Northern Virginia communities</span>.</p>
+      </div>
+      <div><h4>Services</h4><ul>
+        <li><a href="#services">Real estate photography</a></li>
+        <li><a href="construction-monitoring/">Construction monitoring</a></li>
+        <li><a href="#services">Roof &amp; property documentation</a></li>
+        <li><a href="#services">Cinematic video</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a data-email href="mailto:bestep@estepssolutionsllc.com"><span class="email-text">bestep@estepssolutionsllc.com</span></a></li>
+        <li><a href="#quote">Request a free quote</a></li>
+        <li><a href="https://flightstudio-us.com/" data-fs-link target="_blank" rel="noopener">Flight Studio &#8599;</a></li>
+      </ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; <span data-year>2026</span> Estep's Aerial, a division of Estep's Solutions LLC</span>
+      <span>FAA Part 107 certified remote pilot</span>
+    </div>
   </div>
 </footer>
 
-<div class="lightbox" id="lb"><button aria-label="Close">&times;</button><img alt=""></div>
-
-<script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
-  const header = document.querySelector('header');
-  addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 20));
-  document.querySelectorAll('#menu a').forEach(a => a.addEventListener('click', () => document.getElementById('menu').classList.remove('open')));
-
-  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold: .1});
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-  // "Help me choose" helper
-  const tips = {
-    sell:  ['Homes & Property', 'Aerial photos and a short video help your listing stand out and show off the yard, land and neighborhood.', 'Homes & Property'],
-    build: ['Construction Updates', 'I can fly from the same spots on a regular schedule so you have a clear visual record of progress.', 'Construction Updates'],
-    roof:  ['Roof & Property Check', 'Close-up photos let you (or your insurer) see the damage clearly, without anyone climbing a ladder.', 'Roof & Property Check'],
-    promo: ['Events & Promotions', 'Eye-catching aerial clips and fly-through videos are perfect for your website and social media.', 'Event or Promotion'],
-    fun:   ["Let's talk about it!", "Family land, a special place, a creative idea: tell me what you're picturing and we'll figure it out together.", 'Not sure yet, help me decide']
-  };
-  let picked = null;
-  document.querySelectorAll('.choice').forEach(c => c.addEventListener('click', () => {
-    document.querySelectorAll('.choice').forEach(x => x.classList.remove('on'));
-    c.classList.add('on');
-    const t = tips[c.dataset.k]; picked = t[2];
-    const a = document.getElementById('answer');
-    a.querySelector('h3').textContent = 'Sounds like: ' + t[0];
-    a.querySelector('p').textContent = t[1];
-    a.classList.remove('show'); void a.offsetWidth; a.classList.add('show');
-  }));
-  document.getElementById('answer-btn').addEventListener('click', () => {
-    if (picked) document.getElementById('service').value = picked;
-  });
-
-  // Portfolio filters
-  document.querySelectorAll('.filters button').forEach(b => b.addEventListener('click', () => {
-    document.querySelectorAll('.filters button').forEach(x => x.classList.remove('active'));
-    b.classList.add('active');
-    const f = b.dataset.f;
-    document.querySelectorAll('.item').forEach(it => it.classList.toggle('hide', f !== 'all' && !it.dataset.cat.split(' ').includes(f)));
-  }));
-
-  // Lightbox
-  const lb = document.getElementById('lb');
-  document.querySelectorAll('.item').forEach(it => it.addEventListener('click', () => {
-    const img = it.querySelector('img'); if (!img) return;
-    lb.querySelector('img').src = img.src; lb.classList.add('open');
-  }));
-  lb.addEventListener('click', () => lb.classList.remove('open'));
-
-  // Quote form: opens the visitor's email app with details filled in.
-  document.getElementById('quote').addEventListener('submit', e => {
-    e.preventDefault();
-    const d = new FormData(e.target);
-    const body = [...d.entries()].map(([k, v]) => `${k[0].toUpperCase() + k.slice(1)}: ${v}`).join('\n');
-    location.href = 'mailto:bestep@estepssolutionsllc.com?subject=' +
-      encodeURIComponent('Estep\'s Aerial quote request: ' + d.get('service')) + '&body=' + encodeURIComponent(body);
-  });
-</script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/projects.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
