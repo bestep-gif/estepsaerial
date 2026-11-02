@@ -28,7 +28,7 @@ window.SITE_CONFIG = {
 
   // ---- About section ----------------------------------------------------
   // Your portrait, e.g. "assets/img/brandon.webp". Leave "" to show the logo instead.
-  pilotPortrait: "",
+  pilotPortrait: "assets/img/brandon-1000.webp",
 
   // ---- Flight Studio showcase -------------------------------------------
   flightStudio: {
